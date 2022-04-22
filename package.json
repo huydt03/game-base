@@ -1,0 +1,26 @@
+{
+  "name": "@drhuy/game-base",
+  "version": "1.0.0",
+  "description": "basic {RoomsBase, RoomBase, PlayerBase} for game app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "const {RoomsBase, RoomBase, PlayerBase} = require('@drhuy/game-base');"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huydt03/game-base.git"
+  },
+  "keywords": [
+    "javascript",
+    "game-base"
+  ],
+  "author": "drhuy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huydt03/game-base/issues"
+  },
+  "homepage": "https://github.com/huydt03/game-base#readme",
+  "dependencies": {
+    "@drhuy/infobase": "^1.0.0"
+  }
+}

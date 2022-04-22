@@ -1,0 +1,27 @@
+{
+  "name": "@drhuy/infobase",
+  "version": "1.0.0",
+  "description": "object with info (id, info(object) ) return object.info and events ...on{info[key]}Update",
+  "main": "InfoBase.js",
+  "scripts": {
+    "test": "new InfoBase(1, {name: 'drhuy', age: 30})"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huydt03/InfoBase.git"
+  },
+  "keywords": [
+    "event-handle",
+    "infobase",
+    "javascript"
+  ],
+  "author": "drhuy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huydt03/InfoBase/issues"
+  },
+  "homepage": "https://github.com/huydt03/InfoBase#readme",
+  "dependencies": {
+    "@drhuy/event-handle": "^1.0.2"
+  }
+}

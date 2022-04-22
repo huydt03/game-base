@@ -1,0 +1,23 @@
+{
+  "name": "@drhuy/event-handle",
+  "version": "1.0.2",
+  "description": "javascript event handle",
+  "main": "EventHandle.js",
+  "scripts": {
+    "test": "new EventHandle(['onClick', 'onBlur'])"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huydt03/EventHandle.git"
+  },
+  "keywords": [
+    "javascript",
+    "event-handle"
+  ],
+  "author": "drhuy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huydt03/EventHandle/issues"
+  },
+  "homepage": "https://github.com/huydt03/EventHandle#readme"
+}
