@@ -18,7 +18,7 @@ function RoomsBase(id, info){
 
 	let rooms = {};
 
-	let self = new InfoBase(id, {rooms, players, ...info});
+	let self = new InfoBase(id, info);
 
 	// rooms
 	self.addRoom = function(room){
@@ -67,6 +67,13 @@ function RoomsBase(id, info){
 
 	function init(){
 		self.handle.add(EVENTS);
+		self.players = players;
+		self.rooms = rooms;
+
+		Object.defineProperties(self, {
+			players: { get: function(){ return players } },
+			rooms: { get: function(){ return rooms } }
+		});
 	}
 	init();
 
