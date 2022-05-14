@@ -11,7 +11,7 @@ function RoomBase(id, info){
 
 	let players = {};
 
-	let self = new InfoBase(id, {players, ...info});
+	let self = new InfoBase(id, info);
 
 	self.playerEnter = function(player){
 		self.handle.onBeforePlayerEnter.fire(player);
@@ -36,8 +36,10 @@ function RoomBase(id, info){
 
 	function init(){
 		self.handle.add(EVENTS);
+		self.players = players;
 
 		Object.defineProperties(self, {
+			players: { get: function(){ return players } },
 			nPlayers: { get: function(){ return Object.keys(players).length; } }
 		});
 	}
